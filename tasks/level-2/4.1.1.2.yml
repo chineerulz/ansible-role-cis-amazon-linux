@@ -13,6 +13,12 @@
     - "4.1.1.2"
     - scored
 
+- name: Create the file, if it doesnt exist already
+    file:
+      path: "{{ cis_audit_auditd_filename }}"
+      state: touch
+    when: auditd_4_1_1_2.stat.exists == False
+
 - name: 4.1.1.2 Ensure system is disabled when audit logs are full (Scored)
   lineinfile:
     regexp: "{{ item.regexp }}"
