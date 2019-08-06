@@ -6,7 +6,7 @@
 ###############################################
 
 cis_apply_level_1_profile: true    # Whether Level 1 of the benchmark should be applied
-cis_apply_level_2_profile: false   # Whether Level 2 of the benchmark should be applied
+cis_apply_level_2_profile: true   # whether Level 2 of the benchmark should be applied
 
 cis_level_1_exclusions: []         # A list of Level 1 recommendations to exclude (i.e. ['1.1.1.1'])
 cis_level_2_exclusions: []         # A list of Level 2 recommendations to exclude
@@ -19,7 +19,7 @@ fail_on_manual_remediation_actions: false  # True or false.
 # Check specific values which can be overridden
 ###############################################
 # 1.1.11
-cis_partition_dev_val_log: "/dev/xvda2"
+cis_partition_dev_val_log: "/dev/xvda1"
 cis_partition_mnt_val_log: "/var/log"
 cis_partition_fs_val_log: "ext4"
 
