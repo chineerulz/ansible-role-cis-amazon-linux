@@ -47,7 +47,7 @@
     dest: "{{ auditd_service_filename }}"
     state: present
   with_items:
-    - { regexp: '^RefuseManualStop', line: "RefuseManualStop=yes" }
+    - { regexp: '^RefuseManualStop', line: "RefuseManualStop=no" }
   notify: Restart auditd
   when: auditd_4_1_1_2.stat.exists == True
   tags:
