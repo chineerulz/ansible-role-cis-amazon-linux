@@ -47,9 +47,9 @@ cis_aide_cron_dom: "*" # Day of month
 cis_aide_cron_month: "*"
 
 # 1.7.1.2
-cis_local_login_warning_banner: "This service is restricted to authorized users only. All activities on this system are logged.\nUnauthorized access will be fully investigated\n"
+cis_local_login_warning_banner: "This service is restricted to authorized users only. All activities on this system are logged.\nUnauthorized access will be fully investigated"
 # 1.7.1.3
-cis_remote_login_warning_banner: "This service is restricted to authorized users only. All activities on this system are logged.\nUnauthorized access will be fully investigated\n"
+cis_remote_login_warning_banner: "This service is restricted to authorized users only. All activities on this system are logged.\nUnauthorized access will be fully investigated"
 
 # 2.2.1.1
 # You should only enable either ntp or chrony, but not both.
